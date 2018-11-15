@@ -25,4 +25,9 @@ public class Person {
         return "My name is "+myname+". I am "+myage+ " years old.";
     }
 
+    @Override
+    public boolean equals(Object person){
+        return (id==((Person)person).id);
+    }
+
 }
